@@ -26,5 +26,6 @@ git config --global user.name "-------" cambia de manera global el nombre del us
 git config --global user.email "------"  cambia de manera global el email del usuario, seguidamente ponemos entre comillas nuestro nombre.
 git log: se usa para ver la historia de nuestros archivos, los commits, el usuario que lo cambió, cuando se realizaron los cambios etc. seguidamente ponemos el nombre de nuestro archivo
 git --list : Te muestra una lista de las configuraciones en el git de la maquina. APLASTAR ''Q'' PARA SALIR.
+rm -rf .git --> Eliminar el INIT en una carpeta MASTER.
 
 esc + shit + z + z -->  sale del editor de GIT BACH.
