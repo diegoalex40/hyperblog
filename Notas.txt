@@ -1,11 +1,11 @@
-                    ----- GIT BASH ------
+                                    ----- GIT BASH ------
 pwd --> nos muestra el path o ruta de la carpeta en donde nos encontramos ubicados
 cd -->  me permite acceder (entrar) a una carpeta en un nivel o varios niveles
 cd .. --> me permite salir de una carpeta en un nivel o varios niveles OJO los dos puntos deben ser separados por un espacio del comando cd
 ls --> me muestra los archivos que contiene una carpeta, puede ser la ubicación actual o una ruta especifica, no muestra los archivos ocultos
 ls -a --> me muestra los archivos que contiene una carpeta, puede ser la ubicación actual o una ruta especifica, incluyendo los archivos ocultos
 ls -l --> me lista los archivos que contiene una carpeta con sus atributos, puede ser la ubicación actual o una ruta especifica, no muestra los archivos ocultos
-ls -la -->me lista los archivos que contiene una carpeta con sus atributos, puede ser la ubicación actual o una ruta especifica, incluyendo los archivos ocultos
+ls -al -->me lista los archivos que contiene una carpeta con sus atributos, puede ser la ubicación actual o una ruta especifica, incluyendo los archivos ocultos
 clear --> limpiar la consola o terminal, o un shorcut crtl + L
 mkdir <nombre carpeta> --> nos permite crear una carpeta
 touch <nombre del archivo> --> nos permite crear un archivo
@@ -15,7 +15,7 @@ rm <nombre del archivo> me permite borrar un archivo
 ctrl + l --> limpia la linea de comando
 
 
-                      ------GIT---------
+                                        ------GIT---------
 git init: lo usamos para determinar la carpeta en la que vamos a trabajar. (carpeta MASTER)
 git status: lo usamos para saber si tenemos un archivo añadido o borrado en nuestro proyecto, para saber en la rama en la que estamos y si tenemos commits.
 git add: es para añadir un archivo a nuestra rama seguidamente ponemos entre comillas el nombre de nuestro archivo o poner un punto para añadir todos los archios de nuestra carpeta.
@@ -25,8 +25,23 @@ git config: muestra configuraciones de git también podemos usar –list para mo
 git config --global user.name "-------" cambia de manera global el nombre del usuario, seguidamente ponemos entre comillas nuestro nombre.
 git config --global user.email "------"  cambia de manera global el email del usuario, seguidamente ponemos entre comillas nuestro nombre.
 git log: se usa para ver la historia de nuestros archivos, los commits, el usuario que lo cambió, cuando se realizaron los cambios etc. seguidamente ponemos el nombre de nuestro archivo
-git --list : Te muestra una lista de las configuraciones en el git de la maquina. APLASTAR ''Q'' PARA SALIR.
-rm -rf .git --> Eliminar el INIT en una carpeta MASTER.
+git --list : Te muestra una lista de las configuraciones en el git de la maquina.
+rm -rf .git --> Eliminar el INIT en una carpeta y deja de ser MASTER.
 git reset ------nombre del commit------ --hard : hace que recupere un archivo en especifico en el tiempo y borra todo lo creado despues de ese archivo.
 
 esc + shit + z + z -->  sale del editor de GIT BACH.
+APLASTAR ''Q'' PARA SALIR.
+
+git rm --cached: Elimina los archivos del área de Staging y del próximo commit pero los mantiene
+                 en nuestro disco duro.
+git rm --force: Elimina los archivos de Git y del disco duro. Git siempre guarda todo, por lo que
+                podemos acceder al registro de la existencia de los archivos, de modo que podremos
+                recuperarlos si es necesario (pero debemos usar comandos más avanzados).
+git reset --soft: Borramos todo el historial y los registros de Git pero guardamos los cambios que
+                tengamos en Staging, así podemos aplicar las últimas actualizaciones a un nuevo commit.
+git reset --hard: Borra todo. Todo todito, absolutamente todo. Toda la información de los commits y del
+                  área de staging se borra del historial.
+git reset HEAD: Este es el comando para sacar archivos del área de Staging. No para borrarlos ni nada de eso,
+                solo para que los últimos cambios de estos archivos no se envíen al último commit,
+                a menos que cambiemos de opinión y los incluyamos de nuevo en staging con git add,
+                por supuesto.
