@@ -25,9 +25,16 @@ git config: muestra configuraciones de git también podemos usar –list para mo
 git config --global user.name "-------" cambia de manera global el nombre del usuario, seguidamente ponemos entre comillas nuestro nombre.
 git config --global user.email "------"  cambia de manera global el email del usuario, seguidamente ponemos entre comillas nuestro nombre.
 git log: se usa para ver la historia de nuestros archivos, los commits, el usuario que lo cambió, cuando se realizaron los cambios etc. seguidamente ponemos el nombre de nuestro archivo
+git log --stat : nos muestras cambios especificos en cada commit.
+git show : muestra cambios en el ULTIMO COMMIT con el anterior.
 git --list : Te muestra una lista de las configuraciones en el git de la maquina.
 rm -rf .git --> Eliminar el INIT en una carpeta y deja de ser MASTER.
 git reset ------nombre del commit------ --hard : hace que recupere un archivo en especifico en el tiempo y borra todo lo creado despues de ese archivo.
+git diff :  muestran cambios entre una el directorio y el stagging
+git cheackout ---nombre de commit--- [nombre del archivo]: nos deja ver el en directo un archivo en concreto
+git checkout MASTER [nombre del archivo]: vuelves al archivo del commit MASTER.
+
+Si se hace un git checkout ---commit--- : causas un cambio de cabecera, para regresar se usa git checkout master.
 
 esc + shit + z + z -->  sale del editor de GIT BACH.
 APLASTAR ''Q'' PARA SALIR.
@@ -45,3 +52,5 @@ git reset HEAD: Este es el comando para sacar archivos del área de Staging. No 
                 solo para que los últimos cambios de estos archivos no se envíen al último commit,
                 a menos que cambiemos de opinión y los incluyamos de nuevo en staging con git add,
                 por supuesto.
+
+git clone url -- 
