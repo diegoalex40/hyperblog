@@ -53,4 +53,4 @@ git reset HEAD: Este es el comando para sacar archivos del área de Staging. No 
                 a menos que cambiemos de opinión y los incluyamos de nuevo en staging con git add,
                 por supuesto.
 
-git clone url -- 
+git branch [nombre] --  Crea una rama nueva como una copia desde el master actual.

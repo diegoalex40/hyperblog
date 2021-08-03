@@ -2,5 +2,23 @@ body
 {
     text-align: center;
     font-family: 'Franklin Gothic Medium';
-    color: blue;
+    color: rgb(54, 54, 97);
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 0%;
+}
+
+#container
+{
+    text-align: left;
+    width: 70%;
+    border: 1mm solid #333;
+    margin: 0 auto;
+    padding: 1% ;
+}
+
+#texto h1
+{
+    text-align: center;
+    font-size: 30px;
 }
