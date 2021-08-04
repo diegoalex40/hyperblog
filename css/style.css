@@ -30,8 +30,8 @@ body
 #cabecera #tagline
 {
     margin: 0 0 0 2em;
-    font-size: 15px;
     font-weight: normal;
+    font-size: 15px;
 }
 
 #texto h1
