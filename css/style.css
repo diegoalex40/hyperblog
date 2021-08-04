@@ -12,9 +12,26 @@ body
 {
     text-align: left;
     width: 70%;
-    border: 1mm solid #333;
+    border: 1px solid #333;
     margin: 0 auto;
     padding: 1% ;
+}
+
+#cabecera
+{
+    background-color: rgb(68, 68, 170);
+    box-shadow: 10px 8px 14px 5px rgba(92, 85, 156, 0.75);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 0px;
+    padding: 0.75em;
+}
+
+#cabecera #tagline
+{
+    margin: 0 0 0 2em;
+    font-weight: normal;
+    font-size: 15px;
 }
 
 #texto h1

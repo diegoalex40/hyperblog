@@ -53,4 +53,6 @@ git reset HEAD: Este es el comando para sacar archivos del área de Staging. No 
                 a menos que cambiemos de opinión y los incluyamos de nuevo en staging con git add,
                 por supuesto.
 
+git commit -am "---" =  hace un add y el commit directamente.
 git branch [nombre] --  Crea una rama nueva como una copia desde el master actual.
+git branco -- nos muestra las ramas existentes y en cual estas.
