@@ -1,7 +1,7 @@
 body
 {
     text-align: center;
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Courier New';
     color: rgb(54, 54, 97);
     font-size: 20px;
     margin: 0 auto;
@@ -21,4 +21,10 @@ body
 {
     text-align: center;
     font-size: 30px;
+}
+
+#texto #poema
+{
+    text-align: center;
+    font-style: italic;
 }
