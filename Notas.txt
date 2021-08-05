@@ -56,3 +56,7 @@ git reset HEAD: Este es el comando para sacar archivos del área de Staging. No 
 git commit -am "---" =  hace un add y el commit directamente.
 git branch [nombre] --  Crea una rama nueva como una copia desde el master actual.
 git branco -- nos muestra las ramas existentes y en cual estas.
+
+git remote add origin [direccion de https] - comando para agregar el repositorio remoto.
+git remote - muestra los espacios para remotos que existen
+git remote -v  :  muestra las direcciones para push y fetch de los remotos
