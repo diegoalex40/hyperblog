@@ -64,3 +64,14 @@ git remote -v  :  muestra las direcciones para push y fetch de los remotos
 git push [nombre] [rama] - subes todos los datos a esa direccion en esa rama.
 git pull [nombre] [rama] --allow-unrelated-histories   :  Fucionar ramas de la nube y el local, referente a la estructura de github.
 git branch -M main --> cambio de la rama master a main.
+
+----TRANSMISION DE DATOS POR SSH-------
+ssh-keygen -t rsa -b 4096 -C "email" = ssh-kegen codigo que genera la llave privada y publica en la computadora
+                                        -t [nombre de codificacion] = nombre de codificacion de esas llave privada y publica.
+                                        -b [numero] = a la complegidad algoritmica de las llaves
+                                        -C [mail] = mail al que va a estar asociado la llave.
+eval $(ssh-agent -s) = nos muestra si esta activa el agente que revisa las llaves publicas y privadas.
+ssh-add [ ~/.ssh/id_rsa][direccion de la llave privada] : agrega la llave y lo relaciona con el correo electronico.
+
+git remote set-url [nombre] [nueva direccion] : para cambiar la direccion a donde apunta.
+
