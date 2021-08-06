@@ -63,3 +63,4 @@ git remote -v  :  muestra las direcciones para push y fetch de los remotos
 
 git push [nombre] [rama] - subes todos los datos a esa direccion en esa rama.
 git pull [nombre] [rama] --allow-unrelated-histories   :  Fucionar ramas de la nube y el local, referente a la estructura de github.
+git branch -M main --> cambio de la rama master a main.
