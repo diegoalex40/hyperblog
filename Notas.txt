@@ -75,3 +75,12 @@ ssh-add [ ~/.ssh/id_rsa][direccion de la llave privada] : agrega la llave y lo r
 
 git remote set-url [nombre] [nueva direccion] : para cambiar la direccion a donde apunta.
 
+git  log --all --graph --decorate --oneline = nos muestra el historico de los commists  de forma mas grafica.
+alias [nombre]="[comando]"  => nos deja renombrar un comando muy largo para llamarlo de manera simple
+
+git tag -a [nombre "comun v0.1"] -m "mensaje" [hash del commit] => nos deja agregar tags en los versionamientos.
+git tag => nos muestra los tags que existen.
+git show-ref --tags => nos muestas los tags y a que hash esta linkeado.
+git push origin --tags  => para mandar los tags a la nube visible en github
+git tag -d [nombre del tag] => mata el tag que se desea.
+git push origin :refs/tags/[nombre del tag] => nos permite eliminar los tags de github
