@@ -55,7 +55,7 @@ git reset HEAD: Este es el comando para sacar archivos del área de Staging. No 
 
 git commit -am "---" =  hace un add y el commit directamente.
 git branch [nombre] --  Crea una rama nueva como una copia desde el master actual.
-git branco -- nos muestra las ramas existentes y en cual estas.
+git branch -- nos muestra las ramas existentes y en cual estas.
 
 git remote add [nombre] [direccion de https] - comando para agregar el repositorio remoto.
 git remote - muestra los espacios para remotos que existen
@@ -64,6 +64,7 @@ git remote -v  :  muestra las direcciones para push y fetch de los remotos
 git push [nombre] [rama] - subes todos los datos a esa direccion en esa rama.
 git pull [nombre] [rama] --allow-unrelated-histories   :  Fucionar ramas de la nube y el local, referente a la estructura de github.
 git branch -M main --> cambio de la rama master a main.
+git merge [rama] => se fuciona con la rama en la que te encuentras la rama que estas llamando.
 
 ----TRANSMISION DE DATOS POR SSH-------
 ssh-keygen -t rsa -b 4096 -C "email" = ssh-kegen codigo que genera la llave privada y publica en la computadora
@@ -84,3 +85,5 @@ git show-ref --tags => nos muestas los tags y a que hash esta linkeado.
 git push origin --tags  => para mandar los tags a la nube visible en github
 git tag -d [nombre del tag] => mata el tag que se desea.
 git push origin :refs/tags/[nombre del tag] => nos permite eliminar los tags de github
+
+
