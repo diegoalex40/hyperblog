@@ -69,3 +69,8 @@ body
     padding: 1px;
     text-align: center;
 }
+
+#footer a
+{
+    color: white;
+}
