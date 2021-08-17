@@ -57,7 +57,7 @@ git commit -am "---" =  hace un add y el commit directamente.
 git branch [nombre] --  Crea una rama nueva como una copia desde el master actual.
 git branch -- nos muestra las ramas existentes y en cual estas.
 
-git remote add [nombre] [direccion de https] - comando para agregar el repositorio remoto.
+git remote add [nombre] [direccion de https] - comando para agregar el repositorio remoto ORIGIN = github del proyecto; UPSTRING = Colaboraciones externas (codigo abierto).
 git remote - muestra los espacios para remotos que existen
 git remote -v  :  muestra las direcciones para push y fetch de los remotos
 
@@ -84,6 +84,11 @@ git tag => nos muestra los tags que existen.
 git show-ref --tags => nos muestas los tags y a que hash esta linkeado.
 git push origin --tags  => para mandar los tags a la nube visible en github
 git tag -d [nombre del tag] => mata el tag que se desea.
-git push origin :refs/tags/[nombre del tag] => nos permite eliminar los tags de github
+git push origin :refs/tags/[nombre del tag] => nos permite eliminar los tags de github.
+
+------GIT HUB ---------
+PUSH REQUEST--> opcion ,subir cambios o para fucionar dos ramas dentro de github con la posibilidad de agregar colaboradores.
+FORK --> Crea un repositorio paralelo de un repositorio publigo dentro de github.
+
 
 
