@@ -7,14 +7,11 @@ Hoy en dia soy profesor en un instituto
 
 me gustaria viajar por el mundo
 
-<<<<<<< HEAD
 Info 1
 
 
 
 
 Info 2
-=======
 
 Experimento 1
->>>>>>> exp 1
