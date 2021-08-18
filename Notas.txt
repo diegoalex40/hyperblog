@@ -56,6 +56,8 @@ git reset HEAD: Este es el comando para sacar archivos del área de Staging. No 
 git commit -am "---" =  hace un add y el commit directamente.
 git branch [nombre] --  Crea una rama nueva como una copia desde el master actual.
 git branch -- nos muestra las ramas existentes y en cual estas.
+git branch -D [nombre de rama] = Elemina una rama definitivamente.
+
 
 git remote add [nombre] [direccion de https] - comando para agregar el repositorio remoto ORIGIN = github del proyecto; UPSTRING = Colaboraciones externas (codigo abierto).
 git remote - muestra los espacios para remotos que existen
@@ -90,5 +92,10 @@ git push origin :refs/tags/[nombre del tag] => nos permite eliminar los tags de 
 PUSH REQUEST--> opcion ,subir cambios o para fucionar dos ramas dentro de github con la posibilidad de agregar colaboradores.
 FORK --> Crea un repositorio paralelo de un repositorio publigo dentro de github.
 
-
+----------REBASE------------
+git rebase [rama] = Se usa para fuciionar las historias de dos ramas, para fingir que no existio una, MALA PRACTICA
+                    USARLA CON CUIDADO.
+                    --PRIMERO usarla en la rama alterna.
+                    --SEGUNDO usarla en la rama MAIN.
+                    --EN CASO DE ERROR USAR reset.
 
