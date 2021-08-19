@@ -9,5 +9,7 @@
 - Buenas practicas en git y github.
 - Github para desarrolladores
 - Uso de Github para proyectos *OpenSourse*
+- Comandos avanzados de Git y Github
+- Buenas practicas en DevOps y uso de Git y Github
 
 [![](https://i.imgur.com/EkjwJdr.png)](https://i.imgur.com/EkjwJdr.png)
