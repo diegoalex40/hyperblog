@@ -9,9 +9,8 @@ me gustaria viajar por el mundo
 
 Info 1
 
-
-
-
 Info 2
 
 Experimento 1
+
+Git stash

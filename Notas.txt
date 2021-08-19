@@ -88,6 +88,15 @@ git push origin --tags  => para mandar los tags a la nube visible en github
 git tag -d [nombre del tag] => mata el tag que se desea.
 git push origin :refs/tags/[nombre del tag] => nos permite eliminar los tags de github.
 
+-------------------------git stash---------------------------
+git stash -> nos crea un guardado en la memoria a cual podemos acceder despues o borrarlo UTIL EN TRABAJOS GRANDES
+git stash pop -> sacar datos del git stash (temporales) a una rama el de la posision [0]
+git stash pop stash@{<num_stash>} -> en caso de tener mas de un stash puedes escoger cual sacar a la rama. Tomar datos de list
+git stash list -> Lista todos los git stash
+git stash drop -> Elimina el stash mas reciente elemento 0
+git stash branch <nombre> = Crea una rama con la informacion guardad en el stash.
+
+
 ------GIT HUB ---------
 PUSH REQUEST--> opcion ,subir cambios o para fucionar dos ramas dentro de github con la posibilidad de agregar colaboradores.
 FORK --> Crea un repositorio paralelo de un repositorio publigo dentro de github.
@@ -98,4 +107,6 @@ git rebase [rama] = Se usa para fuciionar las historias de dos ramas, para fingi
                     --PRIMERO usarla en la rama alterna.
                     --SEGUNDO usarla en la rama MAIN.
                     --EN CASO DE ERROR USAR reset.
+
+
 
