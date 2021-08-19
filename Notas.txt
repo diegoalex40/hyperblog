@@ -98,6 +98,11 @@ git stash drop -> Elimina el stash mas reciente elemento 0.
 git stash clear -> Elemina todos los stash en la memoria.
 git stash branch <nombre> = Crea una rama con la informacion guardad en el stash.
 
+git clean -f --> borra los archivos detectados por git como nuevos en el proyecto.
+git clean --dry-run --> muestra los archivos que van a ser borrados por git clean -f cuando corra.
+
+git cherry-pick [numero de commit] --> nos permite fusionar una rama con un commit cualquiera. ES UNA MALA PRACTICA CUIDADO.
+
 
 ------GIT HUB ---------
 PUSH REQUEST--> opcion ,subir cambios o para fucionar dos ramas dentro de github con la posibilidad de agregar colaboradores.
