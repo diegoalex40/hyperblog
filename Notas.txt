@@ -120,4 +120,22 @@ git rebase [rama] = Se usa para fuciionar las historias de dos ramas, para fingi
 git reflog -- Nos da la informacion referente a TODOS LOS COMMITS DEL PROYECTO... SIN EXEPCION!!
 git reset --hard => usar los datos del git reflog una vez encuentres que se daño y donde (--soft poco usado).
 
+------COMANDOS PARA BUSQUEDA------
+        GREP = archivos.
+        LOG = commits.
+git grep "texto" -> Se usa para buscar dentro de un proyecto, la palabra que ponemos a continuacion de grep
+                    si lo que se necesita es una etiqueta o frase poner entre comiilas "texto"
+git grep -n "palabra" --> indica en que lineas y archivos se uso esa palabra.
+git grep -c "palabra" --> cuantas veces use esa palabra.
+git log -S "palabra" --> las veces que use esa palabra en commits o tiene relacion a la palabra.
 
+------ COMANDOS COLABORATIVOS Y COMUNES -----
+git shortlog --> todos los comandos hechos por cada persona (desordenado)
+git shortlog -sn --> el numeor de commits que ha hecho cada miembro del equipo.
+git shortlog -sn --all => Muestra todos los commits hasta los borrados.
+git shortlog -sn --all --no-merges => Excluye a los merges de todos los comandos.
+git config --global alias.[NOMBRE] "[COMANDO]" => Crea un comando corto unicamente para git.
+git blame [archivo] -c => Quien hizo que cambios con identado.
+git blame [archivo o direccion] -L[linea 1],[linea 2] => Nos indica quien hizo los cambios en un rango especifico de lineas.
+git branch -r => branches remotas.
+git branch -a => Todas las branchs locales y remotas.
