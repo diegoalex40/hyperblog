@@ -54,6 +54,7 @@ git reset HEAD: Este es el comando para sacar archivos del área de Staging. No 
                 por supuesto.
 
 git commit -am "---" =  hace un add y el commit directamente.
+git commit --amend --> nos ayuda a corregir el ultimo commit que ya se hizo SOLO SE PUEDE HACER SI SE HIZO PREVIAMENTE UN git add
 git branch [nombre] --  Crea una rama nueva como una copia desde el master actual.
 git branch -- nos muestra las ramas existentes y en cual estas.
 git branch -D [nombre de rama] = Elemina una rama definitivamente.
@@ -115,5 +116,8 @@ git rebase [rama] = Se usa para fuciionar las historias de dos ramas, para fingi
                     --SEGUNDO usarla en la rama MAIN.
                     --EN CASO DE ERROR USAR reset.
 
+------USOS DE EMERGENCIA--------
+git reflog -- Nos da la informacion referente a TODOS LOS COMMITS DEL PROYECTO... SIN EXEPCION!!
+git reset --hard => usar los datos del git reflog una vez encuentres que se daño y donde (--soft poco usado).
 
 
